@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo { 
+  image-rendering: inherit;
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  margin-bottom: 20px;
+
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  color: black;  
+}
+
+nav ul {
+  width: 60%;
+  height: 100%;
+  list-style-type: none;
+  text-align: left
+
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+}
+
+#waves {
+  height: 100%;
+  width: 100%;
+  margin: 0, auto;
+  background-image: url('./Group2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
