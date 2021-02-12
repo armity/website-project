@@ -5,33 +5,46 @@
 }
 
 .logo { 
-  image-rendering: inherit;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   background-color: gray;
-  margin-bottom: 20px;
-
+  padding: 10px 0;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
+
 nav {
-  height: 50px;
+  height: 70px;
   width: 100%;
-  margin: 20px;
-  padding: 20px;
-  background-color: white;
-  color: black;  
+  margin: 10px;
+  // padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  color: black; 
 }
 
 nav ul {
   width: 60%;
-  height: 100%;
+  height: 70px;
+  margin: 10px 0;
+  // padding: 10px;
   list-style-type: none;
-  text-align: left
+  text-align: right;
+  display: block;
+  // flex-direction: column;
+  justify-content: space-between;
 
 }
 
+
 h1 {
+  margin-top: 40px;
   text-align: center;
+  font-weight: bold;
 }
 
 h3 {
@@ -39,12 +52,85 @@ h3 {
   font-style: italic;
 }
 
-#waves {
-  height: 100%;
-  width: 100%;
-  margin: 0, auto;
-  background-image: url('./Group2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: none;
+// #waves {
+//   height: 100%;
+//   width: 100%;
+//   margin: 0, auto;
+//   background-image: url('./Group2.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: none;
+// }
+
+
+@media only screen and (min-width:480px) {
+  #waves {
+    height: 100%;
+    width: 100%;
+    margin: 0, auto;
+    background-image: url('./Group\ 4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+  }
+  nav ul {
+    margin: 0;
+    margin-right: 30px;
+  }
 }
+
+@media only screen and (min-width:991px) {
+  #waves { 
+    height: 800px;
+    width: 100%;
+    // margin: 0, auto;
+    padding-top: 50px;
+    background-image: url('./Group2.jpg');
+    // background-size: cover;
+    background-position: center;
+    }
+
+    .logo { 
+      height: 100px;
+      width: 100%;
+      // margin: 10px;
+      padding: 10px;
+      background-color: gray;
+      padding: 10px 0;
+    }
+    
+    
+    nav {
+      height: 20%;
+      width: 110px;
+      // margin: 20px;
+      // padding: 10px;
+      // display: block;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      justify-content: space-between;
+      background-color: whitesmoke;
+      color: black; 
+    }
+    
+    nav ul {
+      width: 100%;
+      height: 200px;
+      border: 1px solid black;
+      // margin: 20px;
+      list-style-type: none;
+      text-align: left;
+      // display: block;
+      // flex-direction: column;
+      // flex-wrap: nowrap;
+      // flex-shrink: 0;
+      // justify-content: space-around;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+    
+    }
+   
+  }
